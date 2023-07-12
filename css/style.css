@@ -106,6 +106,7 @@ body {
   margin-top: 1em;
   height: 100vh;
   text-align: center;
+  background-color: #252a34;
 }
 .header__title {
   margin: 0.2em 0;
@@ -145,6 +146,10 @@ body {
   display: none;
 }
 
+.main {
+  background-color: #252a34;
+}
+
 .strongPages {
   background-color: #eaeaea;
 }
@@ -168,6 +173,7 @@ body {
 .about {
   text-align: center;
   padding-bottom: 2em;
+  background-color: #252a34;
 }
 .about__img {
   display: none;

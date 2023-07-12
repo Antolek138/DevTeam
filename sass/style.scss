@@ -109,6 +109,7 @@ body {
 	margin-top: 1em;
 	height: 100vh;
 	text-align: center;
+	background-color: c.$bgColor;
 
 	&__title {
 		margin: 0.2em 0;
@@ -159,6 +160,10 @@ body {
 	}
 }
 
+.main{
+	background-color: c.$bgColor;
+}
+
 .strongPages {
 	background-color: c.$silverColor;
 
@@ -187,6 +192,7 @@ body {
 .about {
 	text-align: center;
 	padding-bottom: 2em;
+	background-color: c.$bgColor;
 
 	&__img {
 		display: none;
