@@ -111,7 +111,7 @@ body {
 	text-align: center;
 	background-color: c.$bgColor;
 
-	&__wrapper{
+	&__wrapper {
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -167,7 +167,7 @@ body {
 	}
 }
 
-.main{
+.main {
 	background-color: c.$bgColor;
 }
 
@@ -275,7 +275,7 @@ body {
 		&-html::before,
 		&-css::before,
 		&-js::before,
-		&-react::before{
+		&-react::before {
 			position: absolute;
 			top: -25px;
 			left: 0;
@@ -285,35 +285,35 @@ body {
 			width: 90%;
 		}
 
-		&-html::before{
+		&-html::before {
 			content: 'html';
 		}
 
-		&-css::after{
+		&-css::after {
 			width: 95%;
 		}
 
-		&-css::before{
+		&-css::before {
 			content: 'css';
 		}
 
-		&-js::after{
+		&-js::after {
 			width: 85%;
 		}
 
-		&-js::before{
+		&-js::before {
 			content: 'js';
 		}
 
-		&-react::after{
+		&-react::after {
 			width: 50%;
 		}
 
-		&-react::before{
+		&-react::before {
 			content: 'react';
 		}
 
-		&-percent{
+		&-percent {
 			position: absolute;
 			right: 0;
 			top: -25px;
@@ -321,7 +321,7 @@ body {
 	}
 }
 
-.contact{
+.contact {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -333,24 +333,86 @@ body {
 	color: c.$redColor;
 	background-color: c.$silverColor;
 
-	&__title{
+	&__title {
 		font-size: 4rem;
 		animation: text 3s alternate infinite;
 	}
 
-	&__text{
+	&__text {
 		font-size: 2rem;
 		font-weight: lighter;
 	}
 }
 
-@keyframes text{
-	to{
+@keyframes text {
+	to {
 		color: c.$blueColor;
 	}
 
-	from{
+	from {
 		color: c.$redColor;
+	}
+}
+
+.price {
+	text-align: center;
+	padding-bottom: 4.5em;
+
+	&__title {
+		padding: 2em 0;
+		font-size: 1.8rem;
+		font-weight: bold;
+
+		span {
+			font-size: 3.2rem;
+		}
+	}
+
+	&__box {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		gap: 50px;
+
+		&-cardOne,
+		&-cardTwo,
+		&-cardThree {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			height: 270px;
+			width: 290px;
+			color: c.$bgColor;
+			border-radius: 40px;
+			background-color: c.$silverColor;
+		}
+
+		&-title {
+			padding: 0.5em 0.2em;
+			font-size: 2.4rem;
+			font-weight: bold;
+			color: c.$blueColor;
+		}
+
+		&-text {
+			padding: 0 0.5em;
+			font-size: 1.4rem;
+		}
+
+		&-btn {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-top: 1em;
+			height: 40px;
+			width: 140px;
+			font-size: 1.4rem;
+			color: c.$silverColor;
+			background-color: c.$bgColor;
+			border-radius: 10px;
+		}
 	}
 }
 
@@ -457,35 +519,65 @@ body {
 		}
 	}
 
-	.experience{
-		&__title{
+	.experience {
+		&__title {
 			font-size: 2.4rem;
 
-			span{
+			span {
 				font-size: 4rem;
 			}
 		}
 
-		&__box{
+		&__box {
 			&-html,
 			&-css,
 			&-js,
-			&-react{
+			&-react {
 				width: 450px;
 			}
 
 			&-html::before,
 			&-css::before,
 			&-js::before,
-			&-react::before{
+			&-react::before {
 				top: -40px;
 				font-size: 2.4rem;
 			}
 
-			&-percent{
+			&-percent {
 				top: -40px;
 				font-size: 2.4rem;
 			}
+		}
+	}
+
+	.price {
+		&__title {
+			font-size: 2.4rem;
+
+			span {
+				font-size: 4rem;
+			}
+		}
+
+		&__box{
+			&-cardOne,
+			&-cardTwo,
+			&-cardThree{
+				justify-content: space-evenly;
+				height: 350px;
+				width: 380px;
+			}
+
+			&-title{
+				font-size: 3.2rem;
+			}
+
+			&-text{
+				padding: 0 .8em;
+				font-size: 1.6rem;
+			}
+
 		}
 	}
 }
@@ -498,7 +590,7 @@ body {
 		width: 100%;
 		padding: 0 6em;
 
-		&__wrapper{
+		&__wrapper {
 			align-items: flex-start;
 		}
 
@@ -567,10 +659,10 @@ body {
 		}
 	}
 
-	.experience{
+	.experience {
 		padding: 5em 0;
 		width: 100%;
-		&__box{
+		&__box {
 			justify-content: center;
 			align-items: center;
 			flex-wrap: wrap;
@@ -579,7 +671,49 @@ body {
 		}
 	}
 
-	.contact{
+	.contact {
 		width: 100%;
+	}
+
+	.price{
+		padding-bottom: 5.8em;
+		&__box{
+			min-height: 550px;
+			margin-top: 4.5em;
+			flex-direction: row;
+			flex-wrap: wrap;
+
+			&-cardOne{
+				order: 3;
+			}
+
+			&-cardTwo{
+				order: 1;
+			}
+
+			&-cardThree{
+				order: 2;
+			}
+		}
+	}
+
+}
+
+@media (min-width: 1240px){
+	.price{
+		&__box{
+			&-cardOne{
+				order: 2;
+				align-self: flex-start;
+			}
+
+			&-cardTwo{
+				order: 1;
+			}
+
+			&-cardThree{
+				order: 3;
+			}
+		}
 	}
 }

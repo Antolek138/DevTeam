@@ -301,6 +301,59 @@ body {
     color: #ff2e63;
   }
 }
+.price {
+  text-align: center;
+  padding-bottom: 4.5em;
+}
+.price__title {
+  padding: 2em 0;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.price__title span {
+  font-size: 3.2rem;
+}
+.price__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+.price__box-cardOne, .price__box-cardTwo, .price__box-cardThree {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 270px;
+  width: 290px;
+  color: #252a34;
+  border-radius: 40px;
+  background-color: #eaeaea;
+}
+.price__box-title {
+  padding: 0.5em 0.2em;
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #08d9d6;
+}
+.price__box-text {
+  padding: 0 0.5em;
+  font-size: 1.4rem;
+}
+.price__box-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+  height: 40px;
+  width: 140px;
+  font-size: 1.4rem;
+  color: #eaeaea;
+  background-color: #252a34;
+  border-radius: 10px;
+}
+
 @media (min-width: 768px) {
   .nav {
     left: 50%;
@@ -394,6 +447,24 @@ body {
     top: -40px;
     font-size: 2.4rem;
   }
+  .price__title {
+    font-size: 2.4rem;
+  }
+  .price__title span {
+    font-size: 4rem;
+  }
+  .price__box-cardOne, .price__box-cardTwo, .price__box-cardThree {
+    justify-content: space-evenly;
+    height: 350px;
+    width: 380px;
+  }
+  .price__box-title {
+    font-size: 3.2rem;
+  }
+  .price__box-text {
+    padding: 0 0.8em;
+    font-size: 1.6rem;
+  }
 }
 @media (min-width: 992px) {
   .header {
@@ -472,5 +543,35 @@ body {
   }
   .contact {
     width: 100%;
+  }
+  .price {
+    padding-bottom: 5.8em;
+  }
+  .price__box {
+    min-height: 550px;
+    margin-top: 4.5em;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .price__box-cardOne {
+    order: 3;
+  }
+  .price__box-cardTwo {
+    order: 1;
+  }
+  .price__box-cardThree {
+    order: 2;
+  }
+}
+@media (min-width: 1240px) {
+  .price__box-cardOne {
+    order: 2;
+    align-self: flex-start;
+  }
+  .price__box-cardTwo {
+    order: 1;
+  }
+  .price__box-cardThree {
+    order: 3;
   }
 }/*# sourceMappingURL=style.css.map */
