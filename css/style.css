@@ -187,6 +187,78 @@ body {
   margin-top: 2em;
 }
 
+.experience {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 4.5em;
+  background-color: rgba(217, 217, 217, 0.1);
+}
+.experience__title {
+  padding: 2em 0;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.experience__title span {
+  font-size: 3.2rem;
+}
+.experience__box {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  margin: 4em 0;
+}
+.experience__box-html, .experience__box-css, .experience__box-js, .experience__box-react {
+  position: relative;
+  height: 20px;
+  width: 220px;
+  background-color: #eaeaea;
+}
+.experience__box-html::after, .experience__box-css::after, .experience__box-js::after, .experience__box-react::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #08d9d6;
+}
+.experience__box-html::before, .experience__box-css::before, .experience__box-js::before, .experience__box-react::before {
+  position: absolute;
+  top: -25px;
+  left: 0;
+}
+.experience__box-html::after {
+  width: 90%;
+}
+.experience__box-html::before {
+  content: "html";
+}
+.experience__box-css::after {
+  width: 95%;
+}
+.experience__box-css::before {
+  content: "css";
+}
+.experience__box-js::after {
+  width: 85%;
+}
+.experience__box-js::before {
+  content: "js";
+}
+.experience__box-react::after {
+  width: 50%;
+}
+.experience__box-react::before {
+  content: "react";
+}
+.experience__box-percent {
+  position: absolute;
+  right: 0;
+  top: -25px;
+}
+
 @media (min-width: 768px) {
   .nav {
     left: 50%;
@@ -263,6 +335,23 @@ body {
   .about__contactBox {
     font-size: 2rem;
   }
+  .experience__title {
+    font-size: 2.4rem;
+  }
+  .experience__title span {
+    font-size: 4rem;
+  }
+  .experience__box-html, .experience__box-css, .experience__box-js, .experience__box-react {
+    width: 450px;
+  }
+  .experience__box-html::before, .experience__box-css::before, .experience__box-js::before, .experience__box-react::before {
+    top: -40px;
+    font-size: 2.4rem;
+  }
+  .experience__box-percent {
+    top: -40px;
+    font-size: 2.4rem;
+  }
 }
 @media (min-width: 992px) {
   .header {
@@ -323,5 +412,16 @@ body {
   }
   .about__text {
     padding: 0;
+  }
+  .experience {
+    padding: 5em 0;
+    width: 100%;
+  }
+  .experience__box {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 70%;
   }
 }/*# sourceMappingURL=style.css.map */
