@@ -108,6 +108,12 @@ body {
   text-align: center;
   background-color: #252a34;
 }
+.header__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 .header__title {
   margin: 0.2em 0;
   font-size: 4rem;
@@ -394,19 +400,23 @@ body {
     position: relative;
     align-items: flex-start;
     text-align: left;
-    width: 80%;
+    width: 100%;
+    padding: 0 6em;
+  }
+  .header__wrapper {
+    align-items: flex-start;
   }
   .header__text-Three {
-    width: 50%;
+    width: 45%;
   }
   .header__img {
     display: block;
     position: absolute;
-    left: 95%;
+    left: 75%;
     width: 400px;
     height: 450px;
     background-image: url("../img/PhotoOneTwo.svg");
-    transform: translate(-95%);
+    transform: translate(-75%);
   }
   .main {
     display: flex;
@@ -459,5 +469,8 @@ body {
     flex-wrap: wrap;
     flex-direction: row;
     width: 70%;
+  }
+  .contact {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */

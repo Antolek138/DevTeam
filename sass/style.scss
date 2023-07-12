@@ -111,6 +111,13 @@ body {
 	text-align: center;
 	background-color: c.$bgColor;
 
+	&__wrapper{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+
 	&__title {
 		margin: 0.2em 0;
 		font-size: 4rem;
@@ -488,22 +495,27 @@ body {
 		position: relative;
 		align-items: flex-start;
 		text-align: left;
-		width: 80%;
+		width: 100%;
+		padding: 0 6em;
+
+		&__wrapper{
+			align-items: flex-start;
+		}
 
 		&__text {
 			&-Three {
-				width: 50%;
+				width: 45%;
 			}
 		}
 
 		&__img {
 			display: block;
 			position: absolute;
-			left: 95%;
+			left: 75%;
 			width: 400px;
 			height: 450px;
 			background-image: url('../img/PhotoOneTwo.svg');
-			transform: translate(-95%);
+			transform: translate(-75%);
 		}
 	}
 
@@ -565,5 +577,9 @@ body {
 			flex-direction: row;
 			width: 70%;
 		}
+	}
+
+	.contact{
+		width: 100%;
 	}
 }
