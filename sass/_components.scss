@@ -1,0 +1,11 @@
+@use 'colors' as c;
+
+.colors{
+    color: c.$redColor;
+}
+
+.wrapper{
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+}
