@@ -307,6 +307,39 @@ body {
 	}
 }
 
+.contact{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 10px;
+	padding: 0 1em;
+	height: 100vh;
+	text-align: center;
+	color: c.$redColor;
+	background-color: c.$silverColor;
+
+	&__title{
+		font-size: 4rem;
+		animation: text 3s alternate infinite;
+	}
+
+	&__text{
+		font-size: 2rem;
+		font-weight: lighter;
+	}
+}
+
+@keyframes text{
+	to{
+		color: c.$blueColor;
+	}
+
+	from{
+		color: c.$redColor;
+	}
+}
+
 //?=============
 //?MEDIA
 //?=============
