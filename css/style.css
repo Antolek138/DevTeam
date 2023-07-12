@@ -302,8 +302,9 @@ body {
   }
 }
 .price {
-  text-align: center;
   padding-bottom: 4.5em;
+  scroll-margin-top: 60px;
+  text-align: center;
 }
 .price__title {
   padding: 2em 0;
@@ -332,20 +333,20 @@ body {
   background-color: #eaeaea;
 }
 .price__box-title {
-  padding: 0.5em 0.2em;
+  margin-bottom: 1em;
   font-size: 2.4rem;
   font-weight: bold;
   color: #08d9d6;
 }
 .price__box-text {
-  padding: 0 0.5em;
+  padding: 0 1em;
   font-size: 1.4rem;
 }
 .price__box-btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 1.2em;
+  margin-top: 1.4em;
   height: 40px;
   width: 140px;
   font-size: 1.4rem;
@@ -447,6 +448,9 @@ body {
     top: -40px;
     font-size: 2.4rem;
   }
+  .price {
+    scroll-margin-top: 70px;
+  }
   .price__title {
     font-size: 2.4rem;
   }
@@ -454,16 +458,21 @@ body {
     font-size: 4rem;
   }
   .price__box-cardOne, .price__box-cardTwo, .price__box-cardThree {
-    justify-content: space-evenly;
+    justify-content: space-around;
     height: 350px;
     width: 380px;
   }
   .price__box-title {
+    padding-top: 1em;
     font-size: 3.2rem;
   }
   .price__box-text {
-    padding: 0 0.8em;
+    margin-bottom: 0.5em;
+    padding: 0 1.2em;
     font-size: 1.6rem;
+  }
+  .price__box-btn {
+    margin-bottom: 1em;
   }
 }
 @media (min-width: 992px) {

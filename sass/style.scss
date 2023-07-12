@@ -355,8 +355,9 @@ body {
 }
 
 .price {
-	text-align: center;
 	padding-bottom: 4.5em;
+	scroll-margin-top: 60px;
+	text-align: center;
 
 	&__title {
 		padding: 2em 0;
@@ -390,14 +391,14 @@ body {
 		}
 
 		&-title {
-			padding: 0.5em 0.2em;
+			margin-bottom: 1em;
 			font-size: 2.4rem;
 			font-weight: bold;
 			color: c.$blueColor;
 		}
 
 		&-text {
-			padding: 0 0.5em;
+			padding: 0 1em;
 			font-size: 1.4rem;
 		}
 
@@ -405,7 +406,7 @@ body {
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			margin-top: 1.2em;
+			margin-top: 1.4em;
 			height: 40px;
 			width: 140px;
 			font-size: 1.4rem;
@@ -552,6 +553,8 @@ body {
 	}
 
 	.price {
+		scroll-margin-top: 70px;
+
 		&__title {
 			font-size: 2.4rem;
 
@@ -560,24 +563,29 @@ body {
 			}
 		}
 
-		&__box{
+		&__box {
 			&-cardOne,
 			&-cardTwo,
-			&-cardThree{
-				justify-content: space-evenly;
+			&-cardThree {
+				justify-content: space-around;
 				height: 350px;
 				width: 380px;
 			}
 
-			&-title{
+			&-title {
+				padding-top: 1em;
 				font-size: 3.2rem;
 			}
 
-			&-text{
-				padding: 0 .8em;
+			&-text {
+				margin-bottom: 0.5em;
+				padding: 0 1.2em;
 				font-size: 1.6rem;
 			}
 
+			&-btn {
+				margin-bottom: 1em;
+			}
 		}
 	}
 }
@@ -675,43 +683,42 @@ body {
 		width: 100%;
 	}
 
-	.price{
+	.price {
 		padding-bottom: 5.8em;
-		&__box{
+		&__box {
 			min-height: 550px;
 			margin-top: 4.5em;
 			flex-direction: row;
 			flex-wrap: wrap;
 
-			&-cardOne{
+			&-cardOne {
 				order: 3;
 			}
 
-			&-cardTwo{
+			&-cardTwo {
 				order: 1;
 			}
 
-			&-cardThree{
+			&-cardThree {
 				order: 2;
 			}
 		}
 	}
-
 }
 
-@media (min-width: 1240px){
-	.price{
-		&__box{
-			&-cardOne{
+@media (min-width: 1240px) {
+	.price {
+		&__box {
+			&-cardOne {
 				order: 2;
 				align-self: flex-start;
 			}
 
-			&-cardTwo{
+			&-cardTwo {
 				order: 1;
 			}
 
-			&-cardThree{
+			&-cardThree {
 				order: 3;
 			}
 		}
