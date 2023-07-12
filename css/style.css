@@ -191,6 +191,8 @@ body {
 }
 .about__title span {
   font-size: 3.2rem;
+  color: #eaeaea;
+  text-decoration: none;
 }
 .about__text {
   padding: 0 2em;
