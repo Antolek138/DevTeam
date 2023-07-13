@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .colors {
   color: #ff2e63;
 }
@@ -358,6 +359,65 @@ body {
   border-radius: 10px;
 }
 
+.project {
+  width: 100%;
+  margin-top: 2em;
+  padding: 4em 0;
+  text-align: center;
+  background-color: #eaeaea;
+}
+.project__title {
+  padding: 2em 0;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #252a34;
+}
+.project__title span {
+  font-size: 3.2rem;
+}
+.project__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+.project__box-card {
+  position: relative;
+  width: 450px;
+  height: 250px;
+  scale: 0.6;
+  border-radius: 5px;
+  background-size: cover;
+}
+.project__box-card::after {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  font-size: 2.2rem;
+  color: #252a34;
+  transform: translate(-50%);
+}
+.project__box-card:nth-child(1) {
+  background-image: url("../img/portfolioOne.svg");
+}
+.project__box-card:nth-child(1)::after {
+  content: "aktualny projekt";
+}
+.project__box-card:nth-child(2) {
+  background-image: url("../img/portfolioTwo.svg");
+}
+.project__box-card:nth-child(2)::after {
+  content: "pierwszy projekt";
+}
+.project__box-card:nth-child(3) {
+  background-image: url("../img/portfolioThree.svg");
+}
+.project__box-card:nth-child(3)::after {
+  content: "trzeci projekt (nieskończony)";
+  top: -65px;
+}
+
 @media (min-width: 768px) {
   .nav {
     left: 50%;
@@ -476,6 +536,22 @@ body {
   }
   .price__box-btn {
     margin-bottom: 1em;
+  }
+  .project__title {
+    font-size: 2.4rem;
+  }
+  .project__title span {
+    font-size: 4rem;
+  }
+  .project__box {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0;
+    height: 600px;
+  }
+  .project-card {
+    width: 500px;
+    height: 350px;
   }
 }
 @media (min-width: 992px) {

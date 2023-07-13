@@ -420,6 +420,76 @@ body {
 	}
 }
 
+.project {
+	width: 100%;
+	margin-top: 2em;
+	padding: 4em 0;
+	text-align: center;
+	background-color: c.$silverColor;
+
+	&__title {
+		padding: 2em 0;
+		font-size: 1.8rem;
+		font-weight: bold;
+		color: c.$bgColor;
+
+		span {
+			font-size: 3.2rem;
+		}
+	}
+
+	&__box{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		gap: 50px;
+
+		&-card{
+			position: relative;
+			width: 450px;
+			height: 250px;
+			scale: 0.6;
+			border-radius: 5px;
+			background-size: cover;
+		}
+
+		&-card::after{
+			position: absolute;
+			top: -40px;
+			left: 50%;
+			font-size: 2.2rem;
+			color: c.$bgColor;
+			transform: translate(-50%);
+		}
+
+		&-card:nth-child(1){
+			background-image: url('../img/portfolioOne.svg');
+		}
+
+		&-card:nth-child(1)::after{
+			content: 'aktualny projekt';
+		}
+
+		&-card:nth-child(2){
+			background-image: url('../img/portfolioTwo.svg');
+		}
+
+		&-card:nth-child(2)::after{
+			content: 'pierwszy projekt';
+		}
+
+		&-card:nth-child(3){
+			background-image: url('../img/portfolioThree.svg');
+		}
+
+		&-card:nth-child(3)::after{
+			content: 'trzeci projekt (nieskończony)';
+			top: -65px;
+		}
+	}
+}
+
 //?=============
 //?MEDIA
 //?=============
@@ -590,6 +660,29 @@ body {
 				margin-bottom: 1em;
 			}
 		}
+	}
+
+	.project{
+		&__title {
+			font-size: 2.4rem;
+
+			span {
+				font-size: 4rem;
+			}
+		}
+
+		&__box{
+			flex-direction: row;
+			flex-wrap: wrap;
+			gap: 0;
+			height: 600px;
+		}
+
+		&-card{
+			width: 500px;
+			height: 350px;
+		}
+
 	}
 }
 
