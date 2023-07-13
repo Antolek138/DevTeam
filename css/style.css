@@ -418,6 +418,24 @@ body {
   top: -65px;
 }
 
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+  padding: 2em 1em;
+  color: #252a34;
+  background-color: #eaeaea;
+}
+.footer__box {
+  text-align: center;
+}
+.footer__title-phone {
+  color: #252a34;
+  text-decoration: none;
+}
+
 @media (min-width: 768px) {
   .nav {
     left: 50%;
@@ -555,6 +573,18 @@ body {
   }
   .project__box-card:nth-child(3)::after {
     top: -110px;
+  }
+  .footer {
+    gap: 50px;
+  }
+  .footer__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+  }
+  .footer__box-cardTwo {
+    width: 40%;
   }
 }
 @media (min-width: 992px) {

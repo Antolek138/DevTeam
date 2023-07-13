@@ -490,6 +490,26 @@ body {
 	}
 }
 
+.footer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 25px;
+	padding: 2em 1em;
+	color: c.$bgColor;
+	background-color: c.$silverColor;
+
+	&__box{
+		text-align: center;
+	}
+
+	&__title-phone{
+		color: c.$bgColor;
+		text-decoration: none;
+	}
+}
+
 //?=============
 //?MEDIA
 //?=============
@@ -686,6 +706,20 @@ body {
 				&:nth-child(3)::after{
 					top: -110px;
 				}
+			}
+		}
+	}
+
+	.footer{
+		gap: 50px;
+		&__box{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 25px;
+
+			&-cardTwo{
+				width: 40%;
 			}
 		}
 	}
