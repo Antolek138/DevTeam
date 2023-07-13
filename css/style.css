@@ -286,7 +286,7 @@ body {
   height: 100vh;
   text-align: center;
   color: #ff2e63;
-  background-color: #eaeaea;
+  background-color: #252a34;
 }
 .contact__title {
   font-size: 4rem;
@@ -547,11 +547,14 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 0;
-    height: 600px;
+    height: 700px;
   }
-  .project-card {
-    width: 500px;
-    height: 350px;
+  .project__box-card::after {
+    top: -100px;
+    font-size: 3.2rem;
+  }
+  .project__box-card:nth-child(3)::after {
+    top: -110px;
   }
 }
 @media (min-width: 992px) {
@@ -649,6 +652,9 @@ body {
   }
   .price__box-cardThree {
     order: 2;
+  }
+  .project__box-card {
+    scale: 0.8;
   }
 }
 @media (min-width: 1240px) {

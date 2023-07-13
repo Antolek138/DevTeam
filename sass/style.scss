@@ -334,7 +334,7 @@ body {
 	height: 100vh;
 	text-align: center;
 	color: c.$redColor;
-	background-color: c.$silverColor;
+	background-color: c.$bgColor;
 
 	&__title {
 		font-size: 4rem;
@@ -675,14 +675,19 @@ body {
 			flex-direction: row;
 			flex-wrap: wrap;
 			gap: 0;
-			height: 600px;
-		}
+			height: 700px;
 
-		&-card{
-			width: 500px;
-			height: 350px;
-		}
+			&-card{
+				&::after{
+					top: -100px;
+					font-size: 3.2rem;
+				}
 
+				&:nth-child(3)::after{
+					top: -110px;
+				}
+			}
+		}
 	}
 }
 
@@ -797,6 +802,14 @@ body {
 
 			&-cardThree {
 				order: 2;
+			}
+		}
+	}
+
+	.project{
+		&__box{
+			&-card{
+				scale: 0.8;
 			}
 		}
 	}
