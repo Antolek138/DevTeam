@@ -202,6 +202,10 @@ body {
 .about__contactBox {
   margin-top: 3em;
 }
+.about__contactBox a {
+  text-decoration: none;
+  color: #eaeaea;
+}
 
 .experience {
   display: flex;
@@ -430,9 +434,9 @@ body {
 .footer__box {
   text-align: center;
 }
-.footer__title-phone {
-  color: #252a34;
+.footer__title-phone a {
   text-decoration: none;
+  color: #eaeaea;
 }
 .footer__title {
   margin-bottom: 1em;

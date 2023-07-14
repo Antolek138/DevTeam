@@ -225,6 +225,11 @@ body {
 
 	&__contactBox {
 		margin-top: 3em;
+
+		a{
+			text-decoration: none;
+			color: c.$silverColor;
+		}
 	}
 }
 
@@ -505,8 +510,10 @@ body {
 	}
 
 	&__title-phone{
-		color: c.$bgColor;
-		text-decoration: none;
+		a{
+			text-decoration: none;
+			color: c.$silverColor;
+		}
 	}
 
 	&__title{
