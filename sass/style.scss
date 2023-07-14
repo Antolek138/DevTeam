@@ -172,7 +172,7 @@ body {
 }
 
 .strongPages {
-	padding: 2em 0;
+	padding: 3.5em 0;
 	background-color: c.$silverColor;
 
 	&__boxOne,
@@ -213,7 +213,7 @@ body {
 
 		span {
 			font-size: 3.2rem;
-			color: c.$silverColor;
+			// color: c.$silverColor;
 			text-decoration: none;
 		}
 	}
@@ -224,7 +224,7 @@ body {
 	}
 
 	&__contactBox {
-		margin-top: 2em;
+		margin-top: 3em;
 	}
 }
 
@@ -508,6 +508,18 @@ body {
 		color: c.$bgColor;
 		text-decoration: none;
 	}
+
+	&__title{
+		margin-bottom: 1em;
+		font-size: 2rem;
+		color: c.$redColor;
+	}
+
+	&__text{
+		margin-top: 2.5em;
+		font-weight: bold;
+		color: c.$blueColor;
+	}
 }
 
 //?=============
@@ -600,6 +612,7 @@ body {
 
 			span {
 				font-size: 4rem;
+				color: c.$redColor;
 			}
 		}
 
@@ -712,10 +725,12 @@ body {
 
 	.footer{
 		gap: 50px;
+
 		&__box{
 			display: flex;
 			justify-content: center;
 			align-items: center;
+			flex-direction: column;
 			gap: 25px;
 
 			&-cardTwo{
