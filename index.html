@@ -167,9 +167,23 @@
             </div>
         </section>
         <section class="contact" id="contact">
-            <h2 class="contact__title">coming soon..</h2>
-            <p class="contact__text">z takiej racji iż strona jest na githubie, nie robiłem sekcji kontakt, ponieważ
-                formularz nie wysłałby się. Pozdrawiam 😅 </p>
+            <p class="contact__title">Skontaktuj się</p>
+
+            <form class="contact__form" action="https://getform.io/f/17b47cf9-92ce-410d-b2a9-ec07e140dca9" method="POST">
+
+                <div class="contact__nameBox">
+                    <input class="contact__input--name" placeholder="Imię:" type="text" name="name">
+                    <input class="contact__input--name" placeholder="Nazwisko:" type="text" name="name">
+                </div>
+
+                <input class="contact__input" placeholder="Email:" type="email" name="email">
+
+                <textarea placeholder="Wiadomość:" type="text" name="message"></textarea>
+
+                <input type="hidden" name="_gotcha" style="display:none !important">
+
+                <button class="contact__btn" type="submit">Wyślij</button>
+            </form>
         </section>
     </main>
 

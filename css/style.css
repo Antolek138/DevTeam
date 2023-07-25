@@ -284,30 +284,58 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 10px;
-  padding: 0 1em;
-  height: 100vh;
-  text-align: center;
-  color: #ff2e63;
-  background-color: #252a34;
+  padding: 4em 2em;
+  background-color: #d9d9d9;
 }
 .contact__title {
-  font-size: 4rem;
-  animation: text 3s alternate infinite;
+  margin-bottom: 2em;
+  font-size: 3.2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #252a34;
 }
-.contact__text {
-  font-size: 2rem;
-  font-weight: lighter;
+.contact__form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact__nameBox {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+.contact__input {
+  margin: 0.5em;
+  height: 23px;
+  width: 100%;
+}
+.contact__input--name {
+  width: 123px;
+  height: 23px;
+}
+.contact__btn {
+  margin-top: 2em;
+  width: 142px;
+  height: 42px;
+  border: none;
+  color: #eaeaea;
+  border-radius: 10px;
+  background-color: #ff2e63;
+}
+.contact textarea {
+  resize: vertical;
+  width: 100%;
+  min-height: 80px;
+  max-height: 180px;
+}
+.contact input,
+.contact textarea {
+  padding-left: 0.2em;
+  border: 3px solid #1e1e1e;
+  background-color: #d9d9d9;
 }
 
-@keyframes text {
-  to {
-    color: #08d9d6;
-  }
-  from {
-    color: #ff2e63;
-  }
-}
 .price {
   padding-bottom: 4.5em;
   scroll-margin-top: 60px;
@@ -449,6 +477,22 @@ body {
   color: #08d9d6;
 }
 
+@media (min-width: 576px) {
+  .contact__input--name {
+    width: 80%;
+    height: 50px;
+  }
+  .contact__input {
+    height: 50px;
+  }
+  .contact__form {
+    gap: 50px;
+  }
+  .contact textarea {
+    min-height: 155px;
+    max-height: 210px;
+  }
+}
 @media (min-width: 768px) {
   .nav {
     left: 50%;
@@ -679,6 +723,15 @@ body {
   }
   .contact {
     width: 100%;
+  }
+  .contact__nameBox {
+    gap: 50px;
+  }
+  .contact__form {
+    width: 50%;
+  }
+  .contact input, .contact textarea {
+    padding: 0.8em 0.5em;
   }
   .price {
     padding-bottom: 5.8em;
